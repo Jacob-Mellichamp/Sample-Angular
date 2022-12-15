@@ -50,6 +50,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: "starcoding-angular"
-          slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E830F8E1C9C4868AD658266C6B2BB8B }}
-          package: .
+          package: ./dist/starcoding-angular
